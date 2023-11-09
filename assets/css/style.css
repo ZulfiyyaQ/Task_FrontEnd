@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+  }
+  
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://wallpaperaccess.com/full/3726170.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+  }
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    height: 60px;
+  }
+  
+  .header__logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header__search {
+    padding: 8px;
+    border: 2px solid #1a191f;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .card:hover{
+        background-color: grey;
+        cursor: pointer; 
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
