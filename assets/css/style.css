@@ -9,7 +9,7 @@
     filter:brightness(80%);
     border-radius: 10px;
     margin-top: 10px;
-     margin-left: 10px; 
+    margin-left: 10px; 
     
   }
   
@@ -26,7 +26,12 @@
     margin: 0 auto;
   }
 
-  
+  #main__text{
+    color:#ffffff;
+    font-family: customFont;
+    
+
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -44,6 +49,8 @@
     font-size: 32px;
     text-decoration: none;
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
   }
   
   .header__search {
@@ -84,6 +91,21 @@
     margin-bottom: 30px;
   }
   
+  .film__average{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    right:0;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    display:grid;
+    place-items: center;
+    background-color: #1a191f ;
+    color:#ffffff;
+    font-size: 14px;
+    border:1px solid red;
+  }
  
   
 

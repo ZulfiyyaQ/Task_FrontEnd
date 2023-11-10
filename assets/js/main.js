@@ -9,7 +9,9 @@ function movieapp(data) {
     <div class="card-body">
     
       <h5 class="card-title">${datas.name}</h5>
-      
+     
+      <h6 >${datas.genres}</h6>
+      <p class="film__average">${datas.rating.average}</p>
       <a href="#" </a>
     </div>
   </div>
@@ -20,4 +22,17 @@ function movieapp(data) {
 fetch("https://api.tvmaze.com/shows").then(response=>response.json()).then(data=>movieapp(data))
 
 
-{/* <p class="card-text">${datas.rating.average}</p> */}
+searchİnput.addEventListener("input",(e)=>{
+  e.preventDefault()
+
+  const searchValue=searchİnput.value.toLowerCase()
+  // console.log(searchValue);
+  allTitles= document.querySelectorAll(".card")
+  // console.log(allTitles);
+
+  allTitles.forEach((element ,i) => {
+    element.querySelector('.card_title').textContent.toLowerCase().includes(searchValue)
+    ? element.style.display = ""
+    : element.style.display = "none";
+  });
+})
