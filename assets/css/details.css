@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(./RobotoCondensed-Italic-VariableFont_wght.ttf);
+  }
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://wallpaperaccess.com/full/3726170.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 auto;
+  font-family: Roboto;
+
+  
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  height: 60px;
+}
+
+.header__search {
+  padding: 8px;
+  border: 2px solid #1a191f;
+  border-radius: 5px;
+  outline: none;
+}
+img {
+    max-width: 92%;
+    filter: brightness(80%);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  
+  }
+.img__logo{
+    margin-top:40px ;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 300px;
+  }
+
+ 
+  main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.features{
+    width: 300px;
+    padding: 10px;
+    color:white;
+}
+
+.right-part{
+padding: 10px;
+font-weight: 600;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.movieGenres{
+    color: white;
+}
+
+.cards{
+  background-color: rgba(51, 51, 51, 0.6);
+}
