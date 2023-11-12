@@ -13,18 +13,22 @@ axios.get(`https://api.tvmaze.com/shows/${id}`).then(response=>{
           </div>
 
           <div class="features">
-            <h4><strong>${response.data.name}</strong></h4>
+          <a href="https://www.imdb.com/title/${response.data.externals.imdb}/" class="btn btn-danger">IMDB</a>
+          
             <p>Language: ${response.data.language}</p>
-            <p>Rating: ${response.data.rating.average}</p>
+           
           </div>
         </div>
 
         <div class="right-part">
+        <h2><strong>${response.data.name}</strong></h2>
           <p>${response.data.summary}</p>
+          <h5 class="movieGenres">Genres: ${response.data.genres.join(',')}</h5>
           <p>Start: ${response.data.premiered}</p>
           <p>End: ${response.data.ended}</p>
-          <p class="movieGenres">Genres: ${response.data.genres.join(',')}</p>
+          <a href="./index.html" class="btn go-back-btn btn-danger">Go back</a>
         </div>
+        
       </div>
     </div>
   `;

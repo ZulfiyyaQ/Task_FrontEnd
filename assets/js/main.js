@@ -82,6 +82,7 @@ searchİnput.addEventListener("input", (e) => {
 
 
 
+
 // ferqli variantlarda kodlar =>>>>>>>
 
 
